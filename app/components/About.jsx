@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import showcaseImg from "@public/assets/showcase.jpg";
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
         <div className="m-auto shaddow-xl shadow-gray-400 flex items-center justify-center p-4">
           <Image
             className="rounded-3xl hover:scale-105 ease-in duration-300"
-            src="/../public/assets/showcase.jpg"
+            src={showcaseImg}
             alt="me"
             width={300}
             height={300}
