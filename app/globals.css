@@ -36,3 +36,28 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#379237] to-[#54B435] text-white;
   }
 }
+
+.tilted::before {
+  content: "8";
+  display: inline-block;
+  transform: rotate(10deg);
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.animated-icon {
+  animation: moveInBottom 1s ease-out;
+}

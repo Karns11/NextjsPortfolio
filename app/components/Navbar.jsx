@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -34,7 +33,9 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <Link href="/">
-          <h1 className="text-[#379237]">N8</h1>
+          <h1 className="text-[#379237]">
+            N<span className="tilted"></span>
+          </h1>
         </Link>
         <div>
           <ul className="hidden md:flex">
@@ -77,7 +78,9 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <h1>N8</h1>
+                <h1>
+                  N<span className="tilted"></span>
+                </h1>
               </Link>
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
