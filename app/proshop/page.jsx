@@ -27,12 +27,18 @@ const property = () => {
           <p className="text-[#379237]">Project</p>
           <h2>Overview</h2>
           <p>
-            Presenting an exceptional MERN-based ProShop eCommerce site! This
-            feature-rich platform offers seamless integration, top-notch
-            authentication, and exclusive administrator capabilities. Experience
-            a robust, user-friendly, and scalable solution tailored to meet
-            business needs. Witness the power of this extraordinary platform
-            soon!
+            I spearheaded the design and development of a sophisticated
+            eCommerce website, the Pro Shop, leveraging the power of the MERN
+            stack. This project allowed me to showcase my proficiency in
+            creating a seamless online shopping experience. By incorporating
+            user authentication and authorization through JWT, I ensured that
+            access to protected routes remained secure and exclusive. Moreover,
+            I integrated a reliable payment gateway, PayPal, enabling customers
+            to make secure and convenient online transactions. My skills in
+            Node, Express, MongoDB, React, Redux, Bootstrap, and JWT were
+            instrumental in delivering a feature-rich eCommerce platform that
+            streamlined the buying process while maintaining the highest
+            standards of security.
           </p>
           <a
             href="https://github.com/Karns11/ProShopV2"
