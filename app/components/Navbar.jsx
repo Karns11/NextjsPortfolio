@@ -38,7 +38,7 @@ const Navbar = () => {
           </h1>
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul className={"hidden md:flex"}>
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>

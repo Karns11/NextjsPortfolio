@@ -2,9 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProjectItem = ({ title, backgroundImage, projectUrl, stack }) => {
+const ProjectItem = ({
+  title,
+  backgroundImage,
+  projectUrl,
+  stack,
+  darkMode,
+}) => {
   return (
-    <div className="rounded-xl relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounde-xl p-4 group hover:bg-gradient-to-r from-[#379237] to-[#54B435]">
+    <div
+      className={
+        darkMode
+          ? "rounded-xl relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounde-xl p-4 group hover:bg-gradient-to-r from-[#379237] to-[#54B435] bg-[#fff]"
+          : "rounded-xl relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounde-xl p-4 group hover:bg-gradient-to-r from-[#379237] to-[#54B435]"
+      }
+    >
       <Image
         className="group-hover:opacity-10"
         src={backgroundImage}

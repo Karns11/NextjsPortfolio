@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,12 +31,15 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact" className="w-full lg:h-screen py-16">
+    <div
+      id="contact"
+      className={darkMode ? "w-full py-16 bg-black" : "w-full py-16"}
+    >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#379237]">
           Contact
         </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <h2 className={darkMode ? "py-4 text-[#fff]" : "py-4"}>Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           {/* <div className="hidden lg:block col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -76,7 +79,13 @@ const Contact = () => {
 
           {/* right */}
 
-          <div className="col-span-5 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div
+            className={
+              darkMode
+                ? "col-span-5 w-full h-auto shadow-xl  rounded-xl lg:p-4 bg-[#ecf0f3]"
+                : "col-span-5 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"
+            }
+          >
             <div className="p-4">
               <form ref={form} onSubmit={sendEmail}>
                 <div className="flex flex-col">

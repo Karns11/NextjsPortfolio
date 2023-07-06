@@ -13,16 +13,29 @@ import git from "@public/assets/skills/git.png";
 import python from "@public/assets/skills/python.png";
 import loading from "@public/assets/skills/loading.png";
 
-const Skills = () => {
+const Skills = ({ darkMode }) => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div
+      id="skills"
+      className={
+        darkMode ? "w-full lg:h-screen p-2 bg-black" : "w-full lg:h-screen p-2"
+      }
+    >
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#379237]">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+        <h2 className={darkMode ? "py-4 text-[#fff]" : "py-4"}>
+          What I Can Do
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={html} width={64} height={64} />
@@ -33,7 +46,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={css} width={64} height={64} />
@@ -44,7 +63,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={javascript} width={64} height={64} />
@@ -55,7 +80,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={react} width={64} height={64} />
@@ -66,7 +97,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={mongodb} width={64} height={64} />
@@ -77,7 +114,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={node} width={64} height={64} />
@@ -88,7 +131,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={next} width={64} height={64} />
@@ -99,7 +148,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={tailwind} width={64} height={64} />
@@ -110,7 +165,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={git} width={64} height={64} />
@@ -121,7 +182,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 bg-[#fff] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={python} width={64} height={64} />
@@ -132,7 +199,13 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 md:col-span-2">
+          <div
+            className={
+              darkMode
+                ? "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 md:col-span-2 bg-[#ecf0f3] shadow-gray-400"
+                : "p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 md:col-span-2 shadow-gray-400"
+            }
+          >
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src={loading} width={64} height={64} />
