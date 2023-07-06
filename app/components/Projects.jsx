@@ -1,5 +1,6 @@
 import React from "react";
 import swoleImg from "@public/assets/projects/lfsmarkup.png";
+import swoleImg2 from "@public/assets/projects/lfstest.png";
 import proshopImg from "@public/assets/projects/proshopmarkup.png";
 import nbaImg from "@public/assets/projects/nbamarkup.png";
 import movieBookImg from "@public/assets/projects/movieAndBook.png";
@@ -18,7 +19,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="LETS FIT SWOLE"
-            backgroundImage={swoleImg}
+            backgroundImage={swoleImg2}
             projectUrl="/letsfitswole"
             stack="MERN Stack"
           />

@@ -36,10 +36,18 @@ const property = () => {
             frontend. To ensure secure access to the application's features, I
             implemented user authentication and authorization using JWT.
             Additionally, I created robust RESTful APIs using Express.js for
-            efficient server-side logic and data management. By leveraging
-            MongoDB, Express, React, Node, Redux, Bootstrap, MUI, and JWT, I
-            successfully delivered a comprehensive fitness application that
-            combines functionality with a seamless user experience.
+            efficient server-side logic and data management. The deployment of
+            this project was a very big milestone for me since I had envisoned
+            this application for years. The biggest problem I faced was with the
+            exercise of the day card. The exercise of the day makes a call to an
+            exercise list api and return a random exercise each day. This was
+            really hard to accomplish but after lots of hard work and
+            determination I was able to solve this issue by getting the day of
+            the month, setting a random muscle index equal to the day of the
+            month, and then making an api call to all of the exercises and
+            assigning the exercise of the day to the random muscle index. This
+            will prove to be random each month since each time the api is called
+            a new random muscle group is called as well.
           </p>
           <a
             href="https://github.com/Karns11/NewWorkoutApp"

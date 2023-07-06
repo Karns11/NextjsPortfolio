@@ -27,11 +27,21 @@ const property = () => {
           <p className="text-[#379237]">Project</p>
           <h2>Overview</h2>
           <p>
-            Introducing an NBA stats app developed with React and Bootstrap! Get
-            comprehensive NBA statistics in real-time from the balldontlie API.
-            Make informed decisions with player and team stats, game results,
-            and historical data. Enhance your sports betting strategies with
-            this powerful app.
+            Get comprehensive NBA statistics in real-time from the balldontlie
+            API. Make informed decisions with player and team stats, game
+            results, and historical data. Enhance your sports betting strategies
+            with this powerful app. This application takes in any NBA players
+            name and responds with that players stats for each game within the
+            specified range. Each stat is color codded by best value in terms of
+            sports betting. Also, check th ebox to view that player's current
+            season averages. I developed this application because my roommate
+            and I were bored while watching the NBA playoffs and wanted a way to
+            make more informed betting decicions which, in turn, made the games
+            more fun to watch, effectivley curing our boredom. The biggest
+            challenge of this appliation was being able to list the opposing
+            team on each row. This was done by making two different api calls
+            and correlating each team ID to the opposing team ID in the box
+            score of each game.
           </p>
           <a
             href="https://github.com/Karns11/New-NBA-App"

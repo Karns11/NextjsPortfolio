@@ -38,7 +38,10 @@ const property = () => {
             Node, Express, MongoDB, React, Redux, Bootstrap, and JWT were
             instrumental in delivering a feature-rich eCommerce platform that
             streamlined the buying process while maintaining the highest
-            standards of security.
+            standards of security. The biggest challenge I faced while building
+            this application was figuring out suthentication with JWT. This was
+            something that I had never done before so it was very challenging
+            but super rewarding to see it working properly.
           </p>
           <a
             href="https://github.com/Karns11/ProShopV2"
